@@ -16,14 +16,65 @@
   }
   .preview {
     align-items: center;
+    width: 450px;
+    height: 450px;
+    margin-top: 10px;
+    margin-left: 30%;
+    border-radius: 20px;
   }
   .filterBtn {
     margin-top: 20px;
+    margin-left: 40%;
   }
   .filterBtn button {
+    background-color: DodgerBlue;
+    border-color: #2196F3;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
     margin-right: 10px;
+    border: none;  
+  }
+  .filterBtn button:focus{
+    border-color: #2196F3;
+    outline: #2196F3 auto 1px; 
   }
 
   .applyFilter-msg {
-    margin-top: 10px;
+    margin-top: 15px;
+    font-size: large;
+    margin-left: 43%;
   }
+
+  .image-upload-btn {
+    width: 250px;
+    height: 40px;
+    margin-left: 40%;
+    background-color: DodgerBlue;
+    border-color: #2196F3;
+    color: dodgerblue;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .image-upload-btn:hover {
+    background-color: RoyalBlue;
+  }
+
+
+ .image-upload-btn:active, 
+ .image-upload-btn:focus 
+  {
+    border-color: #2196F3;
+    outline: #2196F3 auto 1px; 
+   }
+
+   .upload-success-msg{
+    width: 400px;
+    margin-top: 15px;
+    margin-left: 33%;
+    border-radius: 50px;
+   }

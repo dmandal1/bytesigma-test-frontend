@@ -92,9 +92,9 @@ export default function Sidenav() {
   const [open, setOpen] = useState(true);
   const [menuData, setMenudata] = useState('ImageUpload');
 
-  const handleDrawerOpen = () => {
-    setOpen(true);
-  };
+  // const handleDrawerOpen = () => {
+  //   setOpen(true);
+  // };
 
   const handleDrawerClose = () => {
     setOpen(false);

@@ -1,9 +1,9 @@
-import React from 'react';
 import Box from '@mui/material/Box';
 import { useState } from 'react';
 import Container from '@mui/material/Container'
 import Typography from '@mui/joy/Typography';
 import axios from 'axios';
+import {Alert} from '@mui/material';
 import { useDropzone } from 'react-dropzone';
 import './ImageUpload.css'
 
@@ -92,6 +92,7 @@ const ImageUpload = () => {
       .then((response) => {
         console.log('Upload successful:', response.data);
         setUploadSuccess('Image successfully uploaded!');
+        
       })
       .catch((error) => {
         console.error('Upload error:', error);
@@ -131,7 +132,7 @@ const ImageUpload = () => {
         <div>
           <div {...getRootProps()} className="dropzone">
             <input {...getInputProps()} />
-            <p className="text-center">Drag drop an image here, or click to select one</p>
+            <p className="text-center">Drag & drop an image here, or click to select one</p>
           </div>
 
           {selectedImage && (
@@ -148,9 +149,12 @@ const ImageUpload = () => {
 
               <p className='applyFilter-msg'>Applied Filter: {appliedFilter}</p>
 
-              <button onClick={handleUpload}>Upload Image</button>
+              <button className='image-upload-btn' onClick={handleUpload}>Upload Image</button>
 
-              {uploadSuccess && <p>{uploadSuccess}</p>}
+              {uploadSuccess && 
+              <Alert className='upload-success-msg' variant='filled' severity='success'>
+                {uploadSuccess}
+              </Alert>}
             </div>
           )}
         </div>
