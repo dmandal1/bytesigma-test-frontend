@@ -1,8 +1,47 @@
-# React + Vite
+# Image Uploader Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Before you begin, ensure you have met the following requirements:
+
+- Node.js: [Download and Install Node.js](https://nodejs.org/)
+- npm: npm is usually included with Node.js installation.
+
+## Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/dmandal1/bytesigma-test-frontend
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd bytesigma-test-frontend-main
+    ```
+
+3. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+## Usage
+
+To run the project locally, follow these steps:
+
+1. Start the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+2. Open your browser and navigate to [http://localhost:5173](http://localhost:5173) to view the application.
+
+
