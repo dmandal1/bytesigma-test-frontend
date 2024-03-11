@@ -1,7 +1,5 @@
 # Image Uploader Frontend
 
-Short project description goes here.
-
 ## Table of Contents
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
